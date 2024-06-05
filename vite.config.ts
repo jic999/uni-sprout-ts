@@ -10,5 +10,10 @@ export default defineConfig(async () => {
       uni(),
       Unocss(),
     ],
+    build: {
+      watch: {
+        exclude: ['node_modules/**', '/__uno.css'],
+      },
+    },
   }
 })
