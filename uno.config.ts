@@ -4,7 +4,7 @@ import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/tr
 
 export default defineConfig({
   shortcuts: {
-    'fcc': 'flex justify-center items-center',
+    fcc: 'flex justify-center items-center',
   },
   rules: [
     [
