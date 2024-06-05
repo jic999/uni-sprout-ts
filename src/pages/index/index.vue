@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useCounterStore } from '@/stores/counter'
 
-const title = ref('Hello')
+const counterStore = useCounterStore()
 </script>
 
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area text-red-500 text-center fcc">
-      <text>{{ title }}</text>
-      <div i-carbon:gift />
+      <div i-carbon:subtract-large @click="counterStore.decrease" />
+      <span>{{ counterStore.count }}</span>
+      <div i-carbon:add-large @click="counterStore.increase" />
     </view>
   </view>
 </template>
