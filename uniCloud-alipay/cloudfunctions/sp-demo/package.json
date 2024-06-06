@@ -1,6 +1,8 @@
 {
   "name": "sp-demo",
-  "dependencies": {},
+  "dependencies": {
+    "sp-base": "file:../common/sp-base"
+  },
   "extensions": {
     "uni-cloud-jql": {}
   }

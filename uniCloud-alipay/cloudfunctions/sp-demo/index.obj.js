@@ -1,5 +1,7 @@
 // 云对象教程: https://uniapp.dcloud.net.cn/uniCloud/cloud-obj
 // jsdoc语法提示教程：https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/129
+const { R } = require('sp-base')
+
 module.exports = {
   _before() { // 通用预处理器
 
@@ -7,11 +9,7 @@ module.exports = {
   hello(name) {
     const clientInfo = this.getClientInfo()
 
-    return {
-      code: 0,
-      msg: 'hello uniCloud',
-      data: { name, ...clientInfo },
-    }
+    return R.ok({ name, ...clientInfo })
   },
   /**
    * method1方法描述
