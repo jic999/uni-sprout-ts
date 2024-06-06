@@ -8,6 +8,7 @@ const demoApi = uniCloud.importObject('sp-demo')
 
 async function getData() {
   const res = await demoApi.hello('Sprout')
+  // eslint-disable-next-line no-console
   console.log(res)
 }
 
