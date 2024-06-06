@@ -1,7 +1,19 @@
 <script setup lang="ts">
+import { onLoad } from '@dcloudio/uni-app'
 import { useCounterStore } from '@/stores/counter'
 
 const counterStore = useCounterStore()
+
+const demoApi = uniCloud.importObject('sp-demo')
+
+async function getData() {
+  const res = await demoApi.hello('Sprout')
+  console.log(res)
+}
+
+onLoad(() => {
+  getData()
+})
 </script>
 
 <template>
