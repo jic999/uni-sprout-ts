@@ -4,6 +4,9 @@ const antfu = require('@antfu/eslint-config').default
 module.exports = antfu(
   {
     unocss: true,
+    ignores: [
+      'src/manifest.json',
+    ],
   },
   {
     rules: {
