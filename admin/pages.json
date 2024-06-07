@@ -154,7 +154,13 @@
         "enablePullDownRefresh": false,
         "navigationBarTitleText": "实名认证"
     }
-}
+	},
+	{
+		"path": "src/pages/demo/index",
+		"style": {
+			"navigationBarTitleText": "Demo"
+		}
+	}
 ],
 	"subPackages": [{
 			"root": "pages/system",
