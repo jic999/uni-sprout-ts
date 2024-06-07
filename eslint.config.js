@@ -6,7 +6,8 @@ module.exports = antfu(
     unocss: true,
     ignores: [
       'src/manifest.json',
-      'admin',
+      'admin/*',
+      '!admin/src',
     ],
   },
   {
